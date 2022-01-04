@@ -25,12 +25,14 @@ def remontee(Matrice: list[list[int]], Colonne: list[int]) -> list[float]:
 def permute(matrice1: list[list[int]], matrice2: list[list[int]], indexLigne1: int,  indexLigne2: int)\
         -> tuple[list[list[int]], list[list[int]]]:
     """
-    Permute deux lignes d'index choisi de deux matrices
-    :param matrice1:
-    :param matrice2:
-    :param indexLigne1:
-    :param indexLigne2:
-    :return:
+    Permute deux lignes d'index choisi de deux matrices.
+    :param matrice1: Matrice à laquelle on permute la ligne d'indice indexLigne1
+                avec la ligne d'indice indexLigne2 de la matrice2.
+    :param matrice2: Matrice à laquelle on permute la ligne d'indice indexLigne2
+                    avec la ligne d'indice indexLigne1 de la matrice1.
+    :param indexLigne1: Index de la ligne de la matrice1 à permmuter.
+    :param indexLigne2: Index de la ligne de la matrice2 à permmuter.
+    :return: Les deux matrices permutées.
     """
     nouvelleMatrice1 = deepcopy(matrice1)
     nouvelleMatrice2 = deepcopy(matrice2)
